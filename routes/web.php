@@ -11,3 +11,5 @@ Route::get('/', function () {
 });
 
 Route::get('/cari', [MahasiswaController::class, 'cari'])->name('cari');
+
+Route::get('mahasiswa/nilai/{id_mahasiswa}', [MahasiswaController::class, 'nilai'])->name('nilai');
